@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.android.employeesmanagementsoftware.Utilities.VerticalScrollview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/a4"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ColorDarkBlack">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/employee_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/employee_icon"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/unknown" />
+
+                <EditText
+                    android:id="@+id/employee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/employee_icon"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Employee's Name"
+                    android:paddingTop="@dimen/padding_employee"
+                    android:textColor="@color/ColorWhite"
+                    android:textColorHint="@color/colorPrimaryDark" />
+
+                <EditText
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/employee_name"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Employee's post"
+                    android:paddingTop="@dimen/padding_employee"
+                    android:textColor="@color/ColorWhite"
+                    android:textColorHint="@color/ColorYellow" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_employee"
+                    android:src="@mipmap/mail"
+                    android:tint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="mohamed_gamal@yahoo.com"
+                    android:textColor="@color/ColorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_employee"
+                    android:src="@mipmap/phone"
+                    android:tint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0100000000"
+                    android:textColor="@color/ColorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_employee"
+                    android:src="@mipmap/calendar"
+                    android:tint="@color/colorPrimary" />
+
+
+                <EditText
+                    android:id="@+id/birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Date naiss"
+                    android:inputType="datetime"
+                    android:textColor="@color/ColorWhite"
+                    android:textColorHint="@color/ColorGray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_employee"
+                    android:src="@mipmap/tasks"
+                    android:tint="@color/colorTheme" />
+
+                <TextView
+                    style="@style/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Taches"
+                    android:textColor="@color/ColorWhite" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/empty_view_task"
+                layout="@layout/empty_tasks_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></include>
+
+            <ListView
+                android:id="@+id/tasks_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:drawSelectorOnTop="true"
+                android:orientation="vertical"></ListView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_employee"
+            android:src="@mipmap/notes"
+            android:tint="@color/colorTheme" />
+
+
+        <com.example.android.employeesmanagementsoftware.Utilities.CustomEditTextWithBullets
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/note"
+            android:hint="Notes"
+            android:padding="8dp"></com.example.android.employeesmanagementsoftware.Utilities.CustomEditTextWithBullets>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/subtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_employee"
+                android:text="Performance"
+                android:textColor="@color/ColorWhite" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.example.android.employeesmanagementsoftware.Utilities.VerticalScrollview>
+
+

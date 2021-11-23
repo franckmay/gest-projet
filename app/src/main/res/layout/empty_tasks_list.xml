@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/empty_deadlines"
+        android:layout_width="284dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/create_task"
+        app:lottie_repeatMode="restart" />
+
+    <TextView
+        android:id="@+id/empty_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_deadlines"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp"
+        android:text="Aucune Tache !?"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/ColorDefaultNote" />
+
+    <TextView
+        android:id="@+id/empty_subtitle_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_task"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:paddingTop="8dp"
+        android:text="Créeons en quelque-unes"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#A2AAB0" />
+</RelativeLayout>

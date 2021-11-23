@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#FFFFFF"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:elevation="8dp"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"><![CDATA[
+
+
+
+        >
+
+    ]]></RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:tint="@color/light_blue"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toEndOf="@+id/textView"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.060000002"
+            card_view:srcCompat="@drawable/ic_arrow_right" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/department_description"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/source_sans_pro_black"
+            android:text="MORE"
+            android:textColor="#4267b2"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.892"
+            card_view:layout_constraintStart_toEndOf="@+id/linearLayout3"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.065" />
+
+        <TextView
+            android:id="@+id/department_description"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_below="@id/department_name"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:maxLines="2"
+            android:text="It's ........"
+            android:textColor="#000000"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/textView2"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView2"
+            card_view:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/department_name"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:gravity="center"
+            android:text="Accounting"
+            android:textAlignment="viewStart"
+            android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/textView10"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView10"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:ignore="RtlCompat" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.454"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/source_sans_pro_black"
+            android:text="DESCRIPTION"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/department_name"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.59000003" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:text="DEPARTMENT"
+            android:textSize="12sp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.03"
+            card_view:layout_constraintStart_toEndOf="@+id/linearLayout3"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.07999998" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">MyProjectManagement</string>
+
+    <string name="department_drop_down">Departement</string>
+    <string name="choose_department">Choisir un Departement</string>
+    <string-array name="departments_array">
+        <item>engineering</item>
+        <item>accounting</item>
+    </string-array>
+    <string-array name="engineering_employees">
+        <item>noumbissie</item>
+        <item>herlan</item>
+        <item>vilarel</item>
+    </string-array>
+    <string-array name="accounting_employees">
+        <item>Sara</item>
+        <item>noumbissie</item>
+        <item>Karim</item>
+    </string-array>
+    <string name="title_activity_main2">Créer Departement</string>
+    <string name="title_activity_employee_creation">Créer Employé</string>
+    <string name="save_button_task_creation">Enregistrer</string>
+    <string name="save_menu">Enregistrer</string>
+    <string name="delete_menu">Supprimer</string>
+    <string name="update_menu">Modifier</string>
+    <string name="done_menu">Terminé</string>
+    <string name="title_activity_starting_page"> MyProjectManagement</string>
+    <string name="action_settings">Tout Supprimer</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="post">Post</string>
+    <string name="deleteEmp">Êtes-vous sûr de vouloir licencier cet employé ?</string>
+    <string name="fire">Fire</string>
+    <string name="not_deleteEmp">Impossible de licencier cet employé</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleteDep">Êtes-vous sûr de vouloir supprimer ce département?</string>
+    <string name="not_deleteDep">Impossible de supprimer ce département</string>
+    <string name="ok">OK</string>
+    <string name="completed">terminé</string>
+    <string name="evaluation">Evaluation</string>
+    <string name="choose_employees">Choisir Employes:</string>
+    <string name="departement">Departement</string>
+    <string name="dep_em">Employés du Departement</string>
+    <string name="dep_ta">Taches du Departement</string>
+    <string name="dep_desc">Description du Departement</string>
+    <string name="tache">Tâche</string>
+    <string name="tache_desc">Description de la Tâche</string>
+    <string name="tache_nom">Nom Tâche</string>
+    <string name="Date_echeance">Date d écheance</string>
+    <string name="Date_deb">Date d écheance</string>
+    <string name="job_desc">Description du travail</string>
+</resources>

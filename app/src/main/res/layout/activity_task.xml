@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a7"
+    tools:context=".taskDB.TaskActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:id="@+id/desc_task_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Date_deb"
+                    android:textColor="@color/ColorYellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/taskdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/desc_task_date"
+                    android:text="1/8/2018"
+                    android:textColor="@color/ColorWhite"
+                    android:textColorHint="@color/mistyrose"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dec_deadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taskdate"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/Date_echeance"
+                    android:textColor="@color/ColorYellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dec_deadline"
+                    android:text="1/8/2018"
+                    android:textColor="@color/ColorWhite"
+                    android:textColorHint="@color/mistyrose"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deadline"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/job_desc"
+                    android:textColor="@color/ColorYellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/taskdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:layout_marginTop="5dp"
+                    android:text="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+                    android:textColor="@color/ColorWhite"
+                    android:textColorHint="@color/mistyrose"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/employees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taskdesc"
+                    android:layout_marginTop="20dp"
+                    android:text="Employes"
+                    android:textColor="@color/ColorYellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/employeesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/employees">
+
+                    <include
+                        android:id="@+id/empty_employees"
+                        layout="@layout/empty_employees_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"></include>
+
+                    <ListView
+                        android:id="@+id/employees_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_height"
+                        android:drawSelectorOnTop="true"
+                        android:nestedScrollingEnabled="true"
+                        android:orientation="vertical"></ListView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/employeesList"
+                    android:minHeight="88dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+
+                    <TextView
+                        android:id="@+id/evaluation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Evaluation"
+                        android:textColor="#2e79f2"
+                        android:textColorHint="@color/mistyrose"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="0"
+                        android:theme="@style/RatingBar"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

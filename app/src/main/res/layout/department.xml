@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.android.employeesmanagementsoftware.Utilities.VerticalScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/a7"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dep_desc"
+            android:padding="16dp"
+            android:textColor="@color/ColorWhite"
+            android:textColorHint="@color/ColorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_employee"
+                android:src="@mipmap/team"
+                android:tint="@color/ColorYellow" />
+
+            <TextView
+                style="@style/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dep_em"
+                android:textColor="@color/ColorWhite" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/empty_employees"
+                layout="@layout/empty_employees_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></include>
+
+            <ListView
+                android:id="@+id/employees_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:drawSelectorOnTop="true"
+                android:orientation="vertical"></ListView>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_emp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_hire">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_employee"
+                android:src="@mipmap/tasks"
+                android:tint="@color/ColorYellow" />
+
+            <TextView
+                style="@style/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dep_ta"
+                android:textColor="@color/ColorWhite" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/tasks_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:drawSelectorOnTop="true"
+                android:orientation="vertical"></ListView>
+
+            <include
+                android:id="@+id/empty_tasks_dep"
+                layout="@layout/empty_tasks_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></include>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            app:srcCompat="@drawable/round_add_circle_outline_24" />
+    </LinearLayout>
+</com.example.android.employeesmanagementsoftware.Utilities.VerticalScrollview>
+
