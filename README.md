@@ -1,11 +1,13 @@
-# EmployeesManagementSoftware
+# Gestion de projet
 
 
-This android app is for employees managment system with the following features
-1. Departments and employees insertion along with corresponding information
-2. Tasks assigning for both employees and departments along with specified deadlines 
-3. Employees average evaluation based upon their cumulative tasks evaluation 
-4. Ability to update or delete any entity in the app
+This android app is for projet task managment system with the following features
+1. Authentification
+2. Departments and employees insertion along with corresponding information
+3. Tasks assigning for both employees and departments along with specified deadlines 
+4. Employees average evaluation based upon their cumulative tasks evaluation 
+5. Ability to update or delete any entity in the app
+
 
 ### Usage
 To build this project, use the "gradle build" command or use "Import Project" in Android Studio.
@@ -20,16 +22,11 @@ https://gist.github.com/outlander24/771d8d6f0801cb6e9fabc1c03a9f5c5b#file-custom
 ### Screenshot
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/24296815/44612960-825d6480-a80d-11e8-9798-b2b183a52b5b.png" width="150" height="250">
-<img src="https://user-images.githubusercontent.com/24296815/44612993-d36d5880-a80d-11e8-9e2e-9c474ef000ef.png" width="150" height="250">
-<img src="https://user-images.githubusercontent.com/24296815/44613121-a621aa00-a80f-11e8-9d65-8ee1cf5af9fc.png" width="150" height="250">
-  <img src="https://user-images.githubusercontent.com/24296815/44613128-b20d6c00-a80f-11e8-87bd-5302b18d223d.png" width="150" height="250">
-  <img src="https://user-images.githubusercontent.com/24296815/44613137-c487a580-a80f-11e8-949d-7e574bad2fef.png" width="150" height="250">
-  <img src="https://user-images.githubusercontent.com/24296815/44613140-cf423a80-a80f-11e8-9330-01e3e284c38c.png" width="150" height="250">
+<img src="" width="150" height="250">
 </p>
 
 ### License
-[![](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/AyaAshrafSABER/EmployeesManagementSoftware) Copyright (c) 2018 AYA ASHRAF SABER MOHAMED <a href="https://github.com/AyaAshrafSABER/EmployeesManagementSoftware/blob/master/LICENSE">License.md</a>
+[![](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/franckmay/gest-projet) Copyright (c) 2020 Franck THIAM <a href="https://github.com/franckmay/gest-projet/master/LICENSE">License.md</a>
 
 
 ## Development & Contribution
